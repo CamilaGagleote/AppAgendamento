@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AppAgendamento</string>
+    <string name="numero">Numero</string>
+    <string name="especialidade">Especialidade</string>
+    <string name="data_consulta">Data consulta</string>
+    <string name="medico">Medico</string>
+    <string name="consulta">Consulta</string>
+    <string name="agendar">Agendar</string>
+    <string name="modificar">Modificar</string>
+    <string name="excluir">Excluir</string>
+    <string name="listar">Listar</string>
+    <string name="buscar">Buscar</string>
+    <string name="tipo_exame">Tipo exame</string>
+    <string name="data_exame">Data exame</string>
+    <string name="exame">Exame</string>
+    <string name="inicio">AppAgendamento</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_exame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExameFragment">
+
+    <TextView
+        android:id="@+id/tvTituloEx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="43dp"
+        android:text="@string/exame"
+        app:layout_constraintBottom_toTopOf="@+id/etNumeroEx"
+        app:layout_constraintEnd_toEndOf="@+id/etNumeroEx" />
+
+    <EditText
+        android:id="@+id/etNumeroEx"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="22dp"
+        android:ems="10"
+        android:hint="@string/numero"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/btnBuscarEx"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etTipoEx"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/tipo_exame"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/etDataEx"
+        app:layout_constraintStart_toStartOf="@+id/etDataEx"
+        app:layout_constraintTop_toBottomOf="@+id/etNumeroEx" />
+
+    <EditText
+        android:id="@+id/etDataEx"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="43dp"
+        android:ems="10"
+        android:hint="@string/data_exame"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTipoEx" />
+
+    <Button
+        android:id="@+id/btnBuscarEx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buscar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etNumeroEx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etNumeroEx" />
+
+    <Button
+        android:id="@+id/btnAgendarEx"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/agendar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDataEx" />
+
+    <Button
+        android:id="@+id/btnModificarEx"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/modificar"
+        app:layout_constraintEnd_toEndOf="@+id/btnExcluirEx"
+        app:layout_constraintStart_toStartOf="@+id/btnExcluirEx"
+        app:layout_constraintTop_toBottomOf="@+id/etDataEx" />
+
+    <Button
+        android:id="@+id/btnListarEx"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="104dp"
+        android:text="@string/listar"
+        app:layout_constraintBottom_toBottomOf="@+id/btnExcluirEx"
+        app:layout_constraintEnd_toStartOf="@+id/btnExcluirEx"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnExcluirEx" />
+
+    <Button
+        android:id="@+id/btnExcluirEx"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="49dp"
+        android:text="@string/excluir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnListarEx"
+        app:layout_constraintTop_toBottomOf="@+id/btnModificarEx" />
+
+    <TextView
+        android:id="@+id/tvListarEx"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="4dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnListarEx" />
+</androidx.constraintlayout.widget.ConstraintLayout>
